@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  width: 100%;
+  height: 100vh;
+}
+
+@import '~antd/dist/antd.css';
+
+.ant-picker-calendar {
+  padding:5px;
+}
+.ant-picker-content *{
+  font-weight: bold;
+}
+.ant-picker-content thead th{
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom:2px solid #001529;
+  color:#001529
+}
+.ant-card.active{
+  color:#FFFFFF;
+  background: #1D2B64;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2980B9, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2980B9, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.ant-card.active .ant-card-head-title{
+  color:#FFFFFF;
+}
+.ant-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.weather{
+  height: calc(100vh - 84px);
+}
+.weather__wrapper{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+.events{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.events li{
+  font-weight: normal;
+  padding:3px 0;
+  color:#1890ff;
+}
+
+.events__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events__text{
+  color: #296188;
+  font-size:1rem
 }

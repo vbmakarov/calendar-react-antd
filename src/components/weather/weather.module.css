@@ -1,0 +1,138 @@
+@keyframes spinningCircle {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+.ant-layout{
+
+}
+
+.weather__container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.weather__cities{
+    margin: 20px 0;
+}
+
+.weather__now {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+
+.weather__day{
+    flex: 1 1 60%;
+    color:#fff;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding:10px 15px
+}
+
+.weather__evening{
+    flex: 1 1 20%;
+    color:#fff;
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2980B9, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2980B9, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding:10px 15px
+}
+
+.weather__night{
+    flex: 1 1 20%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#0f0c29, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#0f0c29,  #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:10px 15px
+}
+
+.weather__intro{
+    font-size:18px;
+    font-weight: bold;
+    margin-right: 15px;
+    color: rgb(41, 97, 136)
+}
+
+.spinner{
+    width:100px;
+    height:100px;
+    border: 4px dashed #001529;
+    border-radius: 50%;
+    animation: spinningCircle 4s infinite linear;
+}
+.spinner__flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+.day__content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.day__metrics{
+    display:flex;
+    flex-direction: column;
+}
+.day__pressure, .day__humidity, .day__wind, .day__sunrise,
+.day__sunset, .day__sun, .night__content,
+.night__icons, .night__metrics,
+.evening__content, .evening__icons, .evening__metrics{
+    display:flex;
+}
+.day__sun div {
+    padding:5px;
+}
+.day__desc {
+    line-height: 50px;
+}
+.day__header, .temp__about{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(41, 97, 136);
+}
+.day__header span {
+    color:#fff;
+}
+.temp__degress {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.weather__night{
+    color:#fff
+}
+
+.evening__temp, .night__temp{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.night__header,  .evening__header{
+    margin-bottom: 15px;
+}
+.night__metrics, .evening__metrics{
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ant-col .card__color{
+    background: #f3faff;
+}
+
+
+
+

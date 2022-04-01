@@ -1,0 +1,10 @@
+.forma{
+    height: calc(100vh - 64px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forma__login {
+    min-width: 50%;
+}
